@@ -129,8 +129,10 @@ $ docker-compose up -d
 
 # Executando o projeto como dev
 $ cd frontend
+$ npm i --legacy-peer-deps
 $ npm run dev
 $ cd ../backend
+$ npm i --legacy-peer-deps
 $ npm run start
 ```
 
