@@ -142,3 +142,4 @@ https://api.crm-leads.40.82.176.176.nip.io/api/docs
 
 - Caso tenha algum erro no banco, crie um novo usuário no seu postgres e atualize o .env do backend
 - Caso o banco não ache, mude no backend\src\config\database.config.ts o host do banco.
+- Caso o docker-entrypoint.sh não seja executado no banco, faça o migrate direto na aplicação do backend, usando o comando `npm run migration:run` e delete a linha 31 e 48 do docker file do backend.
